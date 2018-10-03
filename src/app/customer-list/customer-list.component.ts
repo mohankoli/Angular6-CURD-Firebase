@@ -10,6 +10,7 @@ export class CustomerListComponent implements OnInit {
 
   constructor(private customerService: CustomerService) { }
   CustomerArray = [];
+  showSuccessMessange:boolean;
   ngOnInit() {
   
     this.customerService.getCustomers().subscribe(
